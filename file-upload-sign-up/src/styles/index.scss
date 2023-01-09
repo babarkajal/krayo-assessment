@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  font-family: "Inter", sans-serif;
+}
+
+.signup {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  button {
+    background-color: blue;
+    padding: 8px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+  }
+
+  #sign-in {
+    margin-top: 20px;
+  }
+}
+
+.user-portal {
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  &-heading {
+    width: 100%;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    img {
+      height: 40px;
+      width: 40px;
+      border-radius: 50px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.upload-file {
+  width: 100%;
+  margin-bottom: 20px;
+  padding-top: 30px;
+  &-input {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    &-label {
+      padding: 8px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      color: white;
+      font-size: 1rem;
+      background-color: salmon;
+      color: black;
+    }
+    input {
+      display: none;
+    }
+  }
+  .selected-file {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+.file-list {
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  .heading {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: teal;
+    text-align: center;
+  }
+  &-card {
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+    &:hover {
+      background: lightcyan;
+    }
+  }
+}
+
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-family: inherit;
+  border: 0.5px solid rgb(95, 95, 95);
+}
